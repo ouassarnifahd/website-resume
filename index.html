@@ -64,7 +64,7 @@
               <a class="dropdown-item" href="pdf/cv.pdf">French</a>
             </div>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" id="goback">
             <a class="nav-link" href="javascript:history.back()">Go Back</a>
           </li>
         </ul>
@@ -83,22 +83,6 @@
           </div>
           <p class="mb-5"> Learning motivation: 　学びは生涯の宝　—　Learning is a treasure that follow its owner everywhere.</p>
           <ul class="list-inline list-social-icons mb-0">
-            <li class="list-inline-item">
-              <a href="https://www.facebook.com/ouss.fahd">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
-            <li class="list-inline-item">
-              <a href="https://twitter.com/fahdouassarni">
-                <span class="fa-stack fa-lg">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
-              </a>
-            </li>
             <li class="list-inline-item">
               <a href="https://github.com/ouassarnifahd">
                 <span class="fa-stack fa-lg">
@@ -293,7 +277,7 @@
           <h2 class="mb-5">Skills</h2>
             <h3 class="mb-0">Technical skills</h3>
               <p>
-                <ul class="fa-ul mb-0">
+                <ul class="sk-ul mb-0">
                   <li>
                     <span class="subheading mb-0">Embedded software programming</span>
                     <div class="progress">
@@ -329,7 +313,7 @@
 
             <h3 class="mb-0">Communication skills</h3>
               <p>
-                <ul class="fa-ul mb-0">
+                <ul class="sk-ul mb-0">
                   <li>
                     <span class="subheading mb-0">Arabic — Native level</span>
                     <div class="progress">
@@ -413,6 +397,20 @@
       </section>
 
     </div>
+
+    <!-- show Go back navigation if coming from oussfahd.xyz JavaScript  -->
+    <script type="text/javascript">
+      if (typeof(String.prototype.localeCompare) === 'undefined') {
+        String.prototype.localeCompare = function(str, locale, options) {
+          return ((this == str) ? 0 : ((this > str) ? 1 : -1));
+        };
+      }
+
+      // var hist = history.back();
+      // if (!hist.localeCompare("oussfahd.xyz") && !hist.localeCompare("blog.oussfahd.xyz")) {
+        document.getElementById('goback').style = 'none !important';
+      // }
+    </script>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
