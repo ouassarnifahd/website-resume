@@ -11,7 +11,7 @@
     <title>Tales of My life - Resume</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
@@ -277,63 +277,180 @@
           <h2 class="mb-5">Skills</h2>
             <h3 class="mb-0">Technical skills</h3>
               <p>
-                <ul class="sk-ul mb-0">
-                  <li>
-                    <span class="subheading mb-0">Embedded software programming</span>
-                    <div class="progress">
-                      <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <div id="technical-skills">
+                      <div class="card">
+                        <div class="card-header" id="headingEmbedded">
+                          <div class="subheading mb-3">
+                            Embedded software programming
+                            <a class="btn btn-link" data-toggle="collapse" data-target="#collapseEmbedded" aria-expanded="true" aria-controls="collapseEmbedded">
+                              <i class="fa fa-plus"></i>
+                            </a>
+                          </div>
+                          <!-- TODO onClick: show skills related (C/C++, git ... via colapse component) -->
+                          <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            <!-- TODO onHover: show details (traditional-learning vs self-learning... via multiple progress bars) -->
+                          </div>
+                        </div>
+
+                        <div id="collapseEmbedded" class="collapse show" aria-labelledby="headingEmbedded" data-parent="#technical-skills">
+                          <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingLinux">
+                          <div class="subheading mb-3">
+                            Linux programming
+                            <a class="btn btn-link" data-toggle="collapse" data-target="#collapseLinux" aria-expanded="true" aria-controls="collapseLinux">
+                              <i class="fa fa-plus"></i>
+                            </a>
+                          </div>
+                          <!-- TODO onClick: show skills related (C/C++, git ... via colapse component) -->
+                          <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            <!-- TODO onHover: show details (traditional-learning vs self-learning... via multiple progress bars) -->
+                          </div>
+                        </div>
+
+                        <div id="collapseLinux" class="collapse show" aria-labelledby="headingLinux" data-parent="#technical-skills">
+                          <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingSignal">
+                            <div class="subheading mb-3">
+                              Signal processing, automation and control
+                              <a class="btn btn-link" data-toggle="collapse" data-target="#collapseSignal" aria-expanded="true" aria-controls="collapseSignal">
+                                <i class="fa fa-plus"></i>
+                              </a>
+                            </div>
+                            <!-- TODO onClick: show skills related (C/C++, git ... via colapse component) -->
+                          <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <!-- TODO onHover: show details (traditional-learning vs self-learning... via multiple progress bars) -->
+                          </div>
+                        </div>
+
+                        <div id="collapseSignal" class="collapse show" aria-labelledby="headingSignal" data-parent="#technical-skills">
+                          <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingAnalog">
+                          <div class="subheading mb-3">
+                            Analog electronics and CAO board design
+                            <a class="btn btn-link" data-toggle="collapse" data-target="#collapseAnalog" aria-expanded="true" aria-controls="collapseAnalog">
+                              <i class="fa fa-plus"></i>
+                            </a>
+                          </div>
+                          <!-- TODO onClick: show skills related (C/C++, git ... via colapse component) -->
+                          <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            <!-- TODO onHover: show details (traditional-learning vs self-learning... via multiple progress bars) -->
+                          </div>
+                        </div>
+
+                        <div id="collapseAnalog" class="collapse show" aria-labelledby="headingAnalog" data-parent="#technical-skills">
+                          <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-last">
+                        <div class="card-header" id="headingOthers">
+                          <div class="subheading mb-3">
+                            Other self-acquiered skills
+                            <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOthers" aria-expanded="true" aria-controls="collapseOthers">
+                              <i class="fa fa-plus"></i>
+                            </a>
+                          </div>
+                          <!-- TODO onClick: show skills related (C/C++, git ... via colapse component) -->
+                          <div class="progress">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            <!-- TODO onHover: show details (traditional-learning vs self-learning... via multiple progress bars) -->
+                          </div>
+                        </div>
+
+                        <div id="collapseOthers" class="collapse show" aria-labelledby="headingOthers" data-parent="#technical-skills">
+                          <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
                     </div>
+
+                  <!-- <li>
+                    <div class="subheading mb-0">Embedded software programming</div>
+                    <div class="progress"> -->
+                      <!-- <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div> -->
+                      <!-- TODO onHover: show details (traditional-learning vs self-learning... via multiple progress bars) -->
+                      <!-- TODO onClick: show skills related (C/C++, git ... via colapse component) -->
+                    <!-- </div>
                   </li>
                   <li>
-                    <span class="subheading mb-0">Linux programming</span>
+                    <div class="subheading mb-0">Linux programming</div>
                     <div class="progress">
                       <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </li>
                   <li>
-                    <span class="subheading mb-0">Signal processing, automation and control</span>
+                    <div class="subheading mb-0">Signal processing, automation and control</div>
                     <div class="progress">
                       <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </li>
                   <li>
-                    <span class="subheading mb-0">Analog electronics</span>
+                    <div class="subheading mb-0">Analog electronics and CAO board design</div>
                     <div class="progress">
                       <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </li>
                   <li>
-                    <span class="subheading mb-0">Other self-acquiered skills</span>
+                    <div class="subheading mb-0">Other self-acquiered skills</div>
                     <div class="progress">
                       <div class="progress-bar bg-primary" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </li>
-                </ul>
+                </ul> -->
               </p>
 
             <h3 class="mb-0">Communication skills</h3>
               <p>
                 <ul class="sk-ul mb-0">
                   <li>
-                    <span class="subheading mb-0">Arabic — Native level</span>
+                    <div class="row">
+                      <span class="col-md-2">
+                        <span class="subheading mb-0">Arabic — Native level</span>
+                      </span>
+                      <span class="col-md-8">
+                        <span class="subheading mb-0">Arabic — Native level</span>
+                      </span>
+                    </div>
+                    <!-- TODO use grid: separate Lang and level -->
                     <div class="progress">
                       <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </li>
                   <li>
-                    <span class="subheading mb-0">English — Professional level (TOEIC 855/990)</span>
+                    <div class="subheading mb-0">English — Professional level (TOEIC 855/990)</div>
                     <div class="progress">
                       <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </li>
                   <li>
-                    <span class="subheading mb-0">French — Bilingual level (C1)</span>
+                    <div class="subheading mb-0">French — Bilingual level (C1)</div>
                     <div class="progress">
                       <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </li>
                   <li>
-                    <span class="subheading mb-0">Japanese — Beginner level (N4)</span>
+                    <div class="subheading mb-0">Japanese — Beginner level (N4)</div>
                     <div class="progress">
                       <div class="progress-bar bg-primary" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>

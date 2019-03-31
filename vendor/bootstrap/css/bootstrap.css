@@ -4046,10 +4046,41 @@ tbody.collapse.show {
       flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  /* background-color: #fff; */
   background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  /* border: 1px solid rgba(0, 0, 0, 0.125); */
+  /* border-radius: 0.25rem; */
+}
+
+.card-last {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  /* background-color: #fff; */
+  background-clip: border-box;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.125); */
+  /* border: 1px solid rgba(0, 0, 0, 0.125); */
+  /* border-radius: 0.25rem; */
+}
+
+.card-last > hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.card-last > .list-group:first-child .list-group-item:first-child {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.card-last > .list-group:last-child .list-group-item:last-child {
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
 }
 
 .card > hr {
@@ -4071,6 +4102,8 @@ tbody.collapse.show {
   -ms-flex: 1 1 auto;
       flex: 1 1 auto;
   padding: 1.25rem;
+  /* border-top: 0px; */
+  /* border-radius: 0.25rem; */
 }
 
 .card-title {
@@ -4095,10 +4128,10 @@ tbody.collapse.show {
 }
 
 .card-header {
-  padding: 0.75rem 1.25rem;
+  padding: 0.75rem 1rem;
   margin-bottom: 0;
-  background-color: rgba(0, 0, 0, 0.03);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  /* background-color: rgba(0, 0, 0, 0.03); */
+  /* border: 1px solid rgba(0, 0, 0, 0.125); */
 }
 
 .card-header:first-child {
