@@ -31,7 +31,7 @@
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Resume</span>
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="https://avatars2.githubusercontent.com/u/24702495?s=460&v=4" alt="">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="https://avatars2.githubusercontent.com/u/24702495?s=460&v=4" alt="Profile picture">
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,9 +59,11 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Download PDF Version</a>
-            <div class="dropdown-menu dropdown-menu-left">
-              <a class="dropdown-item" href="pdf/resume.pdf">English</a>
-              <a class="dropdown-item" href="pdf/cv.pdf">French</a>
+            <div class="dropdown-menu dropdown-menu-right" style="min-width: 5rem">
+              <a class="dropdown-item d-none d-lg-block text-right" href="pdf/resume.pdf">English</a>
+              <a class="dropdown-item d-none d-lg-block text-right" href="pdf/cv.pdf">French</a>
+              <a class="dropdown-item d-block d-lg-none" href="pdf/resume.pdf">English</a>
+              <a class="dropdown-item d-block d-lg-none" href="pdf/cv.pdf">French</a>
             </div>
           </li>
           <li class="nav-item" id="goback">
@@ -278,184 +280,243 @@
             <h3 class="mb-0">Technical skills</h3>
               <p>
                 <div id="technical-skills">
-                      <div class="card">
-                        <div class="card-header" id="headingEmbedded">
-                          <div class="subheading mb-3">
-                            Embedded software programming
-                            <a class="btn btn-link" data-toggle="collapse" data-target="#collapseEmbedded" aria-expanded="true" aria-controls="collapseEmbedded">
-                              <i class="fa fa-plus"></i>
-                            </a>
-                          </div>
-                          <!-- TODO onClick: show skills related (C/C++, git ... via colapse component) -->
-                          <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            <!-- TODO onHover: show details (traditional-learning vs self-learning... via multiple progress bars) -->
-                          </div>
-                        </div>
-
-                        <div id="collapseEmbedded" class="collapse show" aria-labelledby="headingEmbedded" data-parent="#technical-skills">
-                          <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                          </div>
-                        </div>
+                  <div class="card">
+                    <div class="card-header" id="headingEmbedded">
+                      <div class="row">
+                        <span class="col-auto mr-auto">
+                          <span class="subheading mb-0">Embedded software programming</span>
+                        </span>
+                        <span class="col-auto">
+                          <span class="subheading mb-0">
+                            <!-- <a class="btn btn-link" data-toggle="collapse" data-target="#collapseEmbedded" aria-expanded="false" aria-controls="collapseEmbedded"> -->
+                              <i class="fa fa-info"></i>
+                            <!-- </a> -->
+                          </span>
+                        </span>
                       </div>
-                      <div class="card">
-                        <div class="card-header" id="headingLinux">
-                          <div class="subheading mb-3">
-                            Linux programming
-                            <a class="btn btn-link" data-toggle="collapse" data-target="#collapseLinux" aria-expanded="true" aria-controls="collapseLinux">
-                              <i class="fa fa-plus"></i>
-                            </a>
-                          </div>
-                          <!-- TODO onClick: show skills related (C/C++, git ... via colapse component) -->
-                          <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                            <!-- TODO onHover: show details (traditional-learning vs self-learning... via multiple progress bars) -->
-                          </div>
-                        </div>
-
-                        <div id="collapseLinux" class="collapse show" aria-labelledby="headingLinux" data-parent="#technical-skills">
-                          <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card-header" id="headingSignal">
-                            <div class="subheading mb-3">
-                              Signal processing, automation and control
-                              <a class="btn btn-link" data-toggle="collapse" data-target="#collapseSignal" aria-expanded="true" aria-controls="collapseSignal">
-                                <i class="fa fa-plus"></i>
-                              </a>
-                            </div>
-                            <!-- TODO onClick: show skills related (C/C++, git ... via colapse component) -->
-                          <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            <!-- TODO onHover: show details (traditional-learning vs self-learning... via multiple progress bars) -->
-                          </div>
-                        </div>
-
-                        <div id="collapseSignal" class="collapse show" aria-labelledby="headingSignal" data-parent="#technical-skills">
-                          <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card">
-                        <div class="card-header" id="headingAnalog">
-                          <div class="subheading mb-3">
-                            Analog electronics and CAO board design
-                            <a class="btn btn-link" data-toggle="collapse" data-target="#collapseAnalog" aria-expanded="true" aria-controls="collapseAnalog">
-                              <i class="fa fa-plus"></i>
-                            </a>
-                          </div>
-                          <!-- TODO onClick: show skills related (C/C++, git ... via colapse component) -->
-                          <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            <!-- TODO onHover: show details (traditional-learning vs self-learning... via multiple progress bars) -->
-                          </div>
-                        </div>
-
-                        <div id="collapseAnalog" class="collapse show" aria-labelledby="headingAnalog" data-parent="#technical-skills">
-                          <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                          </div>
-                        </div>
-                      </div>
-                      <div class="card-last">
-                        <div class="card-header" id="headingOthers">
-                          <div class="subheading mb-3">
-                            Other self-acquiered skills
-                            <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOthers" aria-expanded="true" aria-controls="collapseOthers">
-                              <i class="fa fa-plus"></i>
-                            </a>
-                          </div>
-                          <!-- TODO onClick: show skills related (C/C++, git ... via colapse component) -->
-                          <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            <!-- TODO onHover: show details (traditional-learning vs self-learning... via multiple progress bars) -->
-                          </div>
-                        </div>
-
-                        <div id="collapseOthers" class="collapse show" aria-labelledby="headingOthers" data-parent="#technical-skills">
-                          <div class="card-body">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                          </div>
-                        </div>
+                      <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        <!-- TODO onHover: show details (traditional-learning vs self-learning... via multiple progress bars) -->
                       </div>
                     </div>
 
-                  <!-- <li>
-                    <div class="subheading mb-0">Embedded software programming</div>
-                    <div class="progress"> -->
-                      <!-- <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div> -->
-                      <!-- TODO onHover: show details (traditional-learning vs self-learning... via multiple progress bars) -->
-                      <!-- TODO onClick: show skills related (C/C++, git ... via colapse component) -->
-                    <!-- </div>
-                  </li>
-                  <li>
-                    <div class="subheading mb-0">Linux programming</div>
-                    <div class="progress">
-                      <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div id="collapseEmbedded" class="collapse" aria-labelledby="headingEmbedded" data-parent="#technical-skills">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
                     </div>
-                  </li>
-                  <li>
-                    <div class="subheading mb-0">Signal processing, automation and control</div>
-                    <div class="progress">
-                      <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingLinux">
+                      <div class="row">
+                        <span class="col-auto mr-auto">
+                          <span class="subheading mb-0">Linux programming</span>
+                        </span>
+                        <span class="col-auto">
+                          <span class="subheading mb-0">
+                            <!-- <a class="btn btn-link" data-toggle="collapse" data-target="#collapseLinux" aria-expanded="false" aria-controls="collapseLinux"> -->
+                              <i class="fa fa-info"></i>
+                            <!-- </a> -->
+                          </span>
+                        </span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        <!-- TODO onHover: show details (traditional-learning vs self-learning... via multiple progress bars) -->
+                      </div>
                     </div>
-                  </li>
-                  <li>
-                    <div class="subheading mb-0">Analog electronics and CAO board design</div>
-                    <div class="progress">
-                      <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+
+                    <div id="collapseLinux" class="collapse" aria-labelledby="headingLinux" data-parent="#technical-skills">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
                     </div>
-                  </li>
-                  <li>
-                    <div class="subheading mb-0">Other self-acquiered skills</div>
-                    <div class="progress">
-                      <div class="progress-bar bg-primary" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingSignal">
+                      <div class="row">
+                        <span class="col-auto mr-auto">
+                          <span class="subheading mb-0">Signal processing, automation and control</span>
+                        </span>
+                        <span class="col-auto">
+                          <span class="subheading mb-0">
+                            <!-- <a class="btn btn-link" data-toggle="collapse" data-target="#collapseSignal" aria-expanded="false" aria-controls="collapseSignal"> -->
+                              <i class="fa fa-info"></i>
+                            <!-- </a> -->
+                          </span>
+                        </span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        <!-- TODO onHover: show details (traditional-learning vs self-learning... via multiple progress bars) -->
+                      </div>
                     </div>
-                  </li>
-                </ul> -->
+
+                    <div id="collapseSignal" class="collapse" aria-labelledby="headingSignal" data-parent="#technical-skills">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingAnalog">
+                      <div class="row">
+                        <span class="col-auto mr-auto">
+                          <span class="subheading mb-0">Analog electronics and CAO board design</span>
+                        </span>
+                        <span class="col-auto">
+                          <span class="subheading mb-0">
+                            <!-- <a class="btn btn-link" data-toggle="collapse" data-target="#collapseAnalog" aria-expanded="false" aria-controls="collapseAnalog"> -->
+                              <i class="fa fa-info"></i>
+                            <!-- </a> -->
+                          </span>
+                        </span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        <!-- TODO onHover: show details (traditional-learning vs self-learning... via multiple progress bars) -->
+                      </div>
+                    </div>
+
+                    <div id="collapseAnalog" class="collapse" aria-labelledby="headingAnalog" data-parent="#technical-skills">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-last">
+                    <div class="card-header" id="headingOthers">
+                      <div class="row">
+                        <span class="col-auto mr-auto">
+                          <span class="subheading mb-0">Other self-acquiered skills</span>
+                        </span>
+                        <span class="col-auto">
+                          <span class="subheading mb-0">
+                            <!-- <a class="btn btn-link" data-toggle="collapse" data-target="#collapseOthers" aria-expanded="false" aria-controls="collapseOthers"> -->
+                              <i class="fa fa-info"></i>
+                            <!-- </a> -->
+                          </span>
+                        </span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        <!-- TODO onHover: show details (traditional-learning vs self-learning... via multiple progress bars) -->
+                      </div>
+                    </div>
+
+                    <div id="collapseOthers" class="collapse" aria-labelledby="headingOthers" data-parent="#technical-skills">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </p>
 
             <h3 class="mb-0">Communication skills</h3>
               <p>
-                <ul class="sk-ul mb-0">
-                  <li>
-                    <div class="row">
-                      <span class="col-md-2">
-                        <span class="subheading mb-0">Arabic — Native level</span>
-                      </span>
-                      <span class="col-md-8">
-                        <span class="subheading mb-0">Arabic — Native level</span>
-                      </span>
+                <div id="communication-skills">
+                  <div class="card">
+                    <div class="card-header" id="headingArabic">
+                      <div class="row">
+                        <span class="col-auto mr-auto">
+                          <span class="subheading mb-0">Arabic - Native level</span>
+                        </span>
+                        <span class="col-auto">
+                          <span class="subheading mb-0">
+                            <!-- <a class="btn btn-link" data-toggle="collapse" data-target="#collapseArabic" aria-expanded="false" aria-controls="collapseArabic"> -->
+                              <i class="fa fa-info"></i>
+                            <!-- </a> -->
+                          </span>
+                        </span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
                     </div>
-                    <!-- TODO use grid: separate Lang and level -->
-                    <div class="progress">
-                      <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+
+                    <div id="collapseArabic" class="collapse" aria-labelledby="headingArabic" data-parent="#communication-skills">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
                     </div>
-                  </li>
-                  <li>
-                    <div class="subheading mb-0">English — Professional level (TOEIC 855/990)</div>
-                    <div class="progress">
-                      <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingEnglish">
+                      <div class="row">
+                        <span class="col-auto mr-auto">
+                          <span class="subheading mb-0">English - Professional level</span>
+                        </span>
+                        <span class="col-auto">
+                          <span class="subheading mb-0">
+                            <!-- <a class="btn btn-link" data-toggle="collapse" data-target="#collapseEnglish" aria-expanded="false" aria-controls="collapseEnglish"> -->
+                              <i class="fa fa-info"></i>
+                            <!-- </a> -->
+                          </span>
+                        </span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
                     </div>
-                  </li>
-                  <li>
-                    <div class="subheading mb-0">French — Bilingual level (C1)</div>
-                    <div class="progress">
-                      <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+
+                    <div id="collapseEnglish" class="collapse" aria-labelledby="headingEnglish" data-parent="#communication-skills">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
                     </div>
-                  </li>
-                  <li>
-                    <div class="subheading mb-0">Japanese — Beginner level (N4)</div>
-                    <div class="progress">
-                      <div class="progress-bar bg-primary" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="card">
+                    <div class="card-header" id="headingFrench">
+                      <div class="row">
+                        <span class="col-auto mr-auto">
+                          <span class="subheading mb-0">French - Fluent level</span>
+                        </span>
+                        <span class="col-auto">
+                          <span class="subheading mb-0">
+                            <!-- <a class="btn btn-link" data-toggle="collapse" data-target="#collapseFrench" aria-expanded="false" aria-controls="collapseFrench"> -->
+                              <i class="fa fa-info"></i>
+                            <!-- </a> -->
+                          </span>
+                        </span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
                     </div>
-                  </li>
-                </ul>
+
+                    <div id="collapseFrench" class="collapse" aria-labelledby="headingFrench" data-parent="#communication-skills">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-last">
+                    <div class="card-header" id="headingJapanese">
+                      <div class="row">
+                        <span class="col-auto mr-auto">
+                          <span class="subheading mb-0">Japanese - Beginner level</span>
+                        </span>
+                        <span class="col-auto">
+                          <span class="subheading mb-0">
+                            <!-- <a class="btn btn-link" data-toggle="collapse" data-target="#collapseJapanese" aria-expanded="false" aria-controls="collapseJapanese"> -->
+                              <i class="fa fa-info"></i>
+                            <!-- </a> -->
+                          </span>
+                        </span>
+                      </div>
+                      <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+
+                    <div id="collapseJapanese" class="collapse" aria-labelledby="headingJapanese" data-parent="#communication-skills">
+                      <div class="card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </p>
 
         </div>
