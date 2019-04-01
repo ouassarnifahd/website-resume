@@ -622,10 +622,10 @@
         };
       }
 
-      // var hist = history.back();
-      // if (!hist.localeCompare("oussfahd.xyz") && !hist.localeCompare("blog.oussfahd.xyz")) {
-        document.getElementById('goback').style = 'none !important';
-      // }
+      var hist = history.back();
+      if (!hist.localeCompare("oussfahd.xyz") && !hist.localeCompare("blog.oussfahd.xyz")) {
+        document.getElementById('goback').style = 'display: none !important';
+      }
     </script>
 
   </body>
