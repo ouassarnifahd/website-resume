@@ -616,14 +616,7 @@
     <script type="text/javascript">
       $('[data-toggle="tooltip"]').tooltip();
 
-      if (typeof(String.prototype.localeCompare) === 'undefined') {
-        String.prototype.localeCompare = function(str, locale, options) {
-          return ((this == str) ? 0 : ((this > str) ? 1 : -1));
-        };
-      }
-
-      var hist = history.back();
-      if (!hist.localeCompare("oussfahd.xyz") && !hist.localeCompare("blog.oussfahd.xyz")) {
+      if (document.referrer == "") {
         document.getElementById('goback').style = 'display: none !important';
       }
     </script>
